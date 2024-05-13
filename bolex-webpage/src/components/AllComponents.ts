@@ -1,4 +1,9 @@
+import ContentGroup from './content/ContentGroup';
 import ListGroup from './menu/ListGroup';
 
 
-export default ListGroup;
+
+export {
+    ListGroup,
+    ContentGroup
+}

@@ -1,4 +1,4 @@
-ul.menu-items {
+ul.menu-items, ul.content-items {
     padding: 0;
     display: flex;
     justify-content: center;
