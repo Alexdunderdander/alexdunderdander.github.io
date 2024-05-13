@@ -1,26 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ListGroup from './components/AllComponents';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const menuItems = ["Home", "Page 1", "Page 2"];
+
+  const handleSelectItem = (menuItem: string) => {
+    console.log(menuItem);
+  }
+
+  return <div><ListGroup menuItems={menuItems} onSelectItem={handleSelectItem}/></div>
 }
 
 export default App;

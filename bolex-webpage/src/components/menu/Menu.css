@@ -1,0 +1,21 @@
+ul.menu-items {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:  0; 
+    width: 100%;
+    li {
+        list-style-type: none;
+        min-width: 33.33%;
+        text-align: center;
+        padding: 12px;
+        cursor: pointer;
+        transition: all 0.3s;
+        line-height: 1.5;
+        color: white;
+        &.active, &:hover {
+            background-color: rgba(0, 0, 0, 0.25);
+        }
+    }
+}
