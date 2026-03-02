@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 interface ListGroupProps {
     menuItems: string[];
     onSelectItem: (index: number) => void;

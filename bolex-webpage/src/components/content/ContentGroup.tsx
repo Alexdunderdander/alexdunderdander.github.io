@@ -1,6 +1,3 @@
-
-
-
 interface ContentGroupProps {
     items: string[];
     onSelectItem: (index: number) => void;

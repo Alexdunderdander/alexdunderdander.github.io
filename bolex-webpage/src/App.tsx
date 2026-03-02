@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import './App.css';
-import {ListGroup, ContentGroup} from './components/AllComponents';
+import { useState } from "react";
+import { ListGroup, ContentGroup } from "./components/AllComponents";
 
 function App() {
   const menuItems = ["Home", "Page 1", "Page 2"];
