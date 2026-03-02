@@ -1,27 +1,30 @@
+import ContentGroupItem, {
+  type ContentGroupItemProps,
+} from "./ContentGroupItem";
+
+export interface ContentGroup {
+  title: string;
+  items: ContentGroupItemProps[];
+}
 interface ContentGroupProps {
-    items: string[];
-    onSelectItem: (index: number) => void;
-    selectedIndex: number;
+  groups: ContentGroup[];
 }
 
-function ContentGroup({items, onSelectItem, selectedIndex} : ContentGroupProps) {
-    return (
-        <>
-            <ul className="content-items">
-                {items.map((item, index) => (
-                    <li 
-                        className={selectedIndex === index ? 'content-item active' : 'content-item'} 
-                        key={index} 
-                        onClick={() => {
-                            onSelectItem(index);
-                        }}
-                    >
-                        {item}
-                    </li>
-                ))} 
-            </ul>
-        </>
-    );
+function ContentGroup({ groups }: ContentGroupProps) {
+  return (
+    <div className="content-groups">
+      {groups.map((group, gi) => (
+        <section className="content-group" key={gi}>
+          <h2>{group.title}</h2>
+          <div className="content-group-items">
+            {group.items.map((item, idx) => (
+              <ContentGroupItem {...item} key={idx} />
+            ))}
+          </div>
+        </section>
+      ))}
+    </div>
+  );
 }
 
 export default ContentGroup;

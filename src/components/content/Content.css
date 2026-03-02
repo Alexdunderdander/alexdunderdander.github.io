@@ -1,0 +1,9 @@
+.content-groups {
+  .content-group {
+    background-color: var(--color-primary);
+    list-style-type: none;
+    text-align: center;
+    padding: 12px;
+    line-height: 1.5;
+  }
+}

@@ -1,7 +1,5 @@
-import ContentGroup from './content/ContentGroup';
-import ListGroup from './menu/ListGroup';
+import ContentGroup from "./content/ContentGroup";
+import ContentGroupItem from "./content/ContentGroupItem";
+import ListGroup from "./menu/ListGroup";
 
-export {
-    ListGroup,
-    ContentGroup
-}
+export { ListGroup, ContentGroup, ContentGroupItem };
