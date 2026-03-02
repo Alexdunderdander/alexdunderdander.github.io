@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ListGroup, ContentGroup } from "./components/AllComponents";
 import { contentData } from "./components/content/ContentData";
+import Grainient from "./components/Grainient.tsx";
 
 function App() {
   const contentGroups = contentData;
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <div className="content-container">
+      <Grainient />
       <ListGroup
         menuItems={menuItems}
         onSelectItem={handleSelectItem}
