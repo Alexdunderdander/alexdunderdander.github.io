@@ -17,11 +17,11 @@ html {
 
 body {
   font-family:
+    "Roboto",
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
-    Roboto,
     "Helvetica Neue",
     Arial,
     sans-serif;
@@ -78,9 +78,10 @@ svg {
 :root {
   --max-width: 60rem;
   --spacing: 1rem;
-  --color-primary: #8418ae;
-  --color-primary-lighter: #9c2cb8;
-  --color-primary-darker: #6a0f8c;
+  --color-primary: #6c269f;
+  --color-primary-lighter: #ad7ae1;
+  --color-primary-darker: #3e045d;
+  --color-primary-rgb: 108, 38, 159;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.147 0.004 49.25);

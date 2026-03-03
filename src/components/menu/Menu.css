@@ -1,5 +1,5 @@
 ul.menu-items {
-  position: absolute;
+  position: fixed;
   top: 0;
   padding: 10px 0;
   display: flex;
@@ -8,7 +8,6 @@ ul.menu-items {
   flex-wrap: wrap;
   margin: 0;
   width: 100%;
-  /* background-color: var(--color-primary); */
   li {
     list-style-type: none;
     min-width: calc(15% - 20px);
@@ -20,9 +19,14 @@ ul.menu-items {
     line-height: 1.5;
     color: white;
     border-radius: 100px;
+    background-color: rgba(var(--color-primary-rgb), 0.5);
+    text-transform: uppercase;
+    font-weight: 600;
+    opacity: 0.5;
     &.active,
     &:hover {
-      background-color: rgba(0, 0, 0, 0.25);
+      /* background-color: rgba(var(--color-primary-rgb), 0.25); */
+      opacity: 1;
     }
   }
 }

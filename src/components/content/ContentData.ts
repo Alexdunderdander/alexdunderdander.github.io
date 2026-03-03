@@ -1,6 +1,6 @@
 import type { ContentGroup } from "./ContentGroup";
 
-export const contentData: ContentGroup[] = [
+const contentData: ContentGroup[] = [
   {
     title: "Education",
     items: [
@@ -77,3 +77,5 @@ export const contentData: ContentGroup[] = [
     ],
   },
 ];
+
+export default contentData;

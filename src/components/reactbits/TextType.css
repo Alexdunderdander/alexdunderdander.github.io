@@ -1,0 +1,25 @@
+.text-type {
+  display: inline-block;
+  white-space: pre-wrap;
+  position: absolute;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  opacity: 0.85;
+  text-align: center;
+}
+
+.text-type___content {
+  display: inline-block;
+}
+
+.text-type__cursor {
+  margin-left: 0.25rem;
+  display: inline-block;
+  opacity: 1;
+}
+
+.text-type__cursor--hidden {
+  display: none;
+}
