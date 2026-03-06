@@ -7,43 +7,59 @@ const contentData: ContentGroup[] = [
       {
         title: "MSc (Tech) in Computer Engineering",
         place:
-          "Åbo Akademi University (Expected graduation 2027) Graz University of Technology, Exchange year (09.2025 - 06.2026)",
-        date: "2025 -",
+          "Åbo Akademi University (Expected graduation 2027)\n Graz University of Technology, Exchange year (09.2025 - 06.2026)",
+        date: "2025 - Present",
+        grade: "GPA: 4.62 / 5",
+        description:
+          "Participating in the Erasmus exchange program at Graz University of Technology in Austria, focusing on Computational Neuroscience.",
       },
       {
-        title: "BSc (Tech) in Computer Engineering (4.14 / 5 GPA)",
+        title: "BSc (Tech) in Computer Engineering",
         place: "Åbo Akademi University",
         date: "2022 - 2025",
+        grade: "GPA: 4.14 / 5\n Bachelor's thesis grade: 5 / 5",
+        description:
+          'Bachelor\'s thesis subject: "Evaluation of a Commercial Edge Computing Solution for Collecting and Monitoring Engine Data"\n\nSocieties:\n 2023 - 2024: Vice chairman of the computer engineering student association Datateknologerna vid Åbo Akademi rf\n 2022 - 2023: Vice chairman of the computer science student association Infå vid Åbo Akademi r.f.',
       },
       {
-        title: "ICT vocational degree & matriculation degree (2.96 / 3 GPA)",
-        place: "Vamia",
-        date: "2017 - 2022",
+        title: "ICT Vocational Degree & Matriculation Degree",
+        place: "Vamia & Vasa Gymnasium",
+        date: "2017 - 2020",
+        grade: "GPA: 2.96 / 3",
       },
     ],
   },
 
   {
-    title: "Work Experience",
+    title: "Experience",
     items: [
       {
         title: "Software Engineering Trainee",
         place: "Wärtsilä, Vaasa",
         description:
-          "Worked full time during summer and part-time during studies.",
+          "Contributed to the development of an application for monitoring engine data. Learnt large-scale software development, collaborating with multiple teams incorporating Scrum. Used mainly Typescript and Java for development. I was also familiarized with common software technologies like Docker, API, Edge Computing etc. and wrote my bachelor's thesis about an edge computing solution for Wärtsilä engines. Worked full-time during summers and part-time during studies.",
         date: "05.2024 - 08.2025",
       },
       {
         title: "Frontend Web Developer",
         place: "Creamarketing, Vaasa",
         description:
-          "Worked full time during summer and part-time during studies.",
+          "Focused on developing and maintaining customer websites including eCommerce websites. The development was carried out using SilverStripe as CMS, along with HTML, CSS, JavaScript, and PHP. Worked full-time during summers and   part-time during studies.",
         date: "04.2020 - 05.2024",
+      },
+      {
+        title: "Finnish Defence Forces",
+        place: "Nyland Brigade, Dragsvik",
+        date: "01.2021 - 12.2021",
+        grade: "Sergeant",
+        description:
+          "Served as a coastal jaeger during my mandatory military service in the Finnish Navy. The first half year was basic training and leadership training. The second half year consisted of leading and teaching new recruits, acting as vice-platoon leader.",
       },
     ],
   },
+
   {
-    title: "Experience",
+    title: "Volunteering",
     items: [
       {
         title: "Vice-chairman",
@@ -57,17 +73,13 @@ const contentData: ContentGroup[] = [
         description: "Computer Science student association.",
         date: "01.2023 - 12.2023",
       },
-      {
-        title: "Finnish Defence Forces, Conscript Sergeant",
-        description: "Served in the Finnish Defence Forces.",
-        date: "01.2021 - 12.2021",
-      },
     ],
   },
+
   {
     title: "Technical Skills",
     items: [
-      { title: "Frontend", description: "HTML, CSS, TypeScript" },
+      { title: "Frontend", description: "React, TypeScript, HTML, CSS" },
       { title: "Backend", description: "Java, PHP, Python" },
       {
         title: "Tools & Systems",

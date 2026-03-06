@@ -26,7 +26,7 @@ body {
     Arial,
     sans-serif;
   color: #222;
-  background-color: #fff;
+  /* background-color: var(--color-primary); */
   min-height: 100vh;
   text-rendering: optimizeLegibility;
 }
@@ -42,6 +42,25 @@ h6 {
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.75rem;
+}
+h3 {
+  font-size: 1.375rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+h5 {
+  font-size: 1.125rem;
+}
+h6 {
+  font-size: 1rem;
 }
 
 p {

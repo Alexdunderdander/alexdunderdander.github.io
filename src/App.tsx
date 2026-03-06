@@ -27,7 +27,7 @@ function App() {
           timeSpeed={1}
         />
         <TextType
-          text={["Alexander Berts", "Computer Engineering Student"]}
+          text={["ALEXANDER BERTS", "COMPUTER ENGINEERING STUDENT"]}
           typingSpeed={75}
           deletingSpeed={25}
         />
