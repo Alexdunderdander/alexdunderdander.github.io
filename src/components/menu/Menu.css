@@ -1,6 +1,7 @@
 ul.menu-items {
   position: fixed;
   top: 0;
+  left: 0;
   padding: 10px 0;
   display: flex;
   justify-content: center;
@@ -8,6 +9,14 @@ ul.menu-items {
   flex-wrap: wrap;
   margin: 0;
   width: 100%;
+  transform: translateY(0);
+  transition: transform 0.25s ease-in-out;
+  z-index: 20;
+
+  &.menu-hidden {
+    transform: translateY(-120%);
+  }
+
   li {
     list-style-type: none;
     min-width: calc(15% - 20px);

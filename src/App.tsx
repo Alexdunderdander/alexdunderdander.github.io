@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   ListGroup,
   ContentGroup,
@@ -7,14 +6,21 @@ import {
   TextType,
 } from "./components/AllComponents";
 
+const toSectionId = (label: string) =>
+  `section-${label
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .replace(/\s+/g, "-")}`;
+
 function App() {
   const contentGroups = contentData;
   const menuItems = contentGroups.map((item) => item.title);
-
-  const [selectedIndex, setSelectedIndex] = useState(-1);
+  const sectionIds = menuItems.map(toSectionId);
 
   const handleSelectItem = (index: number) => {
-    setSelectedIndex(index);
+    const section = document.getElementById(sectionIds[index]);
+    section?.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
   return (
@@ -32,12 +38,8 @@ function App() {
           deletingSpeed={25}
         />
       </div>
-      <ListGroup
-        menuItems={menuItems}
-        onSelectItem={handleSelectItem}
-        selectedIndex={selectedIndex}
-      />
-      <ContentGroup groups={contentGroups} />
+      <ListGroup menuItems={menuItems} onSelectItem={handleSelectItem} />
+      <ContentGroup groups={contentGroups} sectionIds={sectionIds} />
     </div>
   );
 }

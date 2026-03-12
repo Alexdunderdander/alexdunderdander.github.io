@@ -1,6 +1,6 @@
 import ContentGroup from "./content/ContentGroup";
 import ContentGroupItem from "./content/ContentGroupItem";
-import ListGroup from "./menu/ListGroup";
+import ListGroup from "./menu/Menu";
 import contentData from "./content/ContentData";
 import Grainient from "./reactbits/Grainient";
 import TextType from "./reactbits/TextType";

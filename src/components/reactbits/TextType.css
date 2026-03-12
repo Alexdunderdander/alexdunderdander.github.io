@@ -2,11 +2,15 @@
   display: inline-block;
   white-space: pre-wrap;
   position: absolute;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 500;
   color: #fff;
   opacity: 0.85;
   text-align: center;
+  padding: 2rem;
+  @media (min-width: 769px) {
+    font-size: 4rem;
+  }
 }
 
 .text-type___content {

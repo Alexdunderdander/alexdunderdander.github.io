@@ -8,13 +8,14 @@ export interface ContentGroup {
 }
 interface ContentGroupProps {
   groups: ContentGroup[];
+  sectionIds?: string[];
 }
 
-function ContentGroup({ groups }: ContentGroupProps) {
+function ContentGroup({ groups, sectionIds }: ContentGroupProps) {
   return (
     <div className="content-groups">
       {groups.map((group, gi) => (
-        <section className="content-group" key={gi}>
+        <section className="content-group" id={sectionIds?.[gi]} key={gi}>
           <h2>{group.title}</h2>
           <div className="content-group-items">
             {group.items.map((item, idx) => (
