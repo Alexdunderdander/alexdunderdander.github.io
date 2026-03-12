@@ -2,7 +2,7 @@ import type { ContentGroup } from "./ContentGroup";
 import aboAkademiLogo from "@/assets/content-images/AboAkademi-logo.png";
 import tuGrazLogo from "@/assets/content-images/TU_Graz_Logo.svg";
 import vamiaLogo from "@/assets/content-images/vamia_logo.webp";
-import wartsilaLogo from "@/assets/content-images/Wärtsilä_logo.png";
+import wartsilaLogo from "@/assets/content-images/Wartsila_logo.png";
 import cremarketingLogo from "@/assets/content-images/Creamarketing_logo.jpg";
 
 const contentData: ContentGroup[] = [
